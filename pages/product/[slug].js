@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import { client, urlFor } from '../../lib/client'
+import { client, urlFor } from '../../libp/client'
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, } from 'react-icons/ai'
 import { Product } from "../../components";
 import { useStateContext } from '../../context/StateContext';
-import getStripe from "../../lib/stripe";
+import getStripe from "../../libp/stripe";
 import toast from 'react-hot-toast'
 
 const ProductDetails = ({ product, products }) => {
